@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ubuntu";
-  src: url(/assets/fonts/Ubuntu-Regular.ttf);
+  src: url(../fonts/Ubuntu-Regular.ttf);
 }
 * {
   padding: 0;
@@ -317,7 +317,7 @@ header .container .div-right {
   }
 }
 header .container .div-right .picture {
-  background: url(/assets/img/5f620f211ba0926ec82dd36b.jpg) center/cover;
+  background: url(../img/5f620f211ba0926ec82dd36b.jpg) center/cover;
   height: 270px;
   width: 330px;
   border-radius: 35px;
@@ -608,13 +608,13 @@ header .nav-header ul li h1 {
   color: rgb(255, 255, 255);
 }
 .section-1 .container-all .container-grid .div-1 {
-  background: url(/assets/img/energy-4828337_1280.jpg) center/cover;
+  background: url(../img/energy-4828337_1280.jpg) center/cover;
 }
 .section-1 .container-all .container-grid .div-2 {
-  background: url(/assets/img/graph-5598156_1280.jpg) center/cover;
+  background: url(../img/graph-5598156_1280.jpg) center/cover;
 }
 .section-1 .container-all .container-grid .div-3 {
-  background: url(/assets/img/money-7269551_1280.jpg) center/cover;
+  background: url(../img/money-7269551_1280.jpg) center/cover;
 }
 
 .section-2 {
@@ -640,7 +640,7 @@ header .nav-header ul li h1 {
   }
 }
 .section-2 .div-img {
-  background: url(/assets/img/woman-6734444_1920.jpg) center/cover;
+  background: url(../img/woman-6734444_1920.jpg) center/cover;
   position: relative;
   width: 46%;
   margin-right: 30px;
@@ -743,7 +743,7 @@ header .nav-header ul li h1 {
   margin-bottom: 50px;
 }
 .section-3 .div-left .div-img {
-  background: url(/assets/img/student-849825_1920.jpg) center/cover;
+  background: url(../img/student-849825_1920.jpg) center/cover;
   height: 330px;
   border-radius: 4px;
   cursor: pointer;
@@ -816,7 +816,7 @@ header .nav-header ul li h1 {
   }
 }
 .section-4 .div-img {
-  background: url(/assets/img/woman-1851464_1920.jpg) center/cover;
+  background: url(../img/woman-1851464_1920.jpg) center/cover;
   height: 550px;
   margin-left: 30px;
   border-radius: 3px;
@@ -1453,7 +1453,7 @@ header .nav-header ul li h1 {
 
 .section-9 {
   margin-top: 200px;
-  background: url(/assets/img/frankfurt-4945405_1920.jpg) center/cover fixed;
+  background: url(../img/frankfurt-4945405_1920.jpg) center/cover fixed;
   height: 570px;
 }
 @media screen and (max-width: 810px) {
