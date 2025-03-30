@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "ubuntu";
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+
+$blue-dark: rgb(5,27,113);
+$blue-dark-button: rgb(6, 35, 148);
+$blue-light: rgb(54,154,212);
+$black1: rgb(8,13,52);
+$white1: rgb(255,255,255);
+$grey1: #aaa6a67a;
+$grey2: rgb(138, 138, 138);
+$hover-blue-light: rgb(21, 126, 187);
+$hover-blue-dark: rgb(3, 19, 83);
+$hover-white: rgb(221, 221, 221);
+$purple1: rgb(73,37,120);
+
+$fontface1: ubuntu;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    background: $white1;
+    font-family: $fontface1;
+    position: relative;
+}
+
+.little-text {
+    color: $blue-dark-button;
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-left: 15px;
+        font-size: 1.3rem;
+    }
+}
+
+img {
+    object-fit: cover;
+}
+
+button {
+    color: $blue-dark-button;
+    font-size: 1rem;
+    font-weight: bold;
+    background: $white1;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: none;
+
+    &:hover {
+        background: $hover-white;
+    }
+}
+
+.date {
+    color: $grey2;
+    letter-spacing: normal;
+    font-size: 0.9rem;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+}

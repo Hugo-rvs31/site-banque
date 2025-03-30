@@ -1,0 +1,142 @@
+.section-4 {
+    margin-top: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 790px) {
+        margin-bottom: 300px;
+    }
+
+    @media screen and (max-width: 470px) {
+        margin-bottom: 400px;
+    }
+
+    @media screen and (max-width: 374px) {
+        margin-bottom: 500px;
+    }
+
+    .div-img {
+        background: url(/assets/img/woman-1851464_1920.jpg) center/cover;
+        height: 550px;
+        margin-left: 30px;
+        border-radius: 3px;
+        width: 45%;
+        position: relative;
+
+        @media screen and (max-width: 1100px) {
+            width: 100%;
+            margin: 0;
+        }
+
+        .text {
+            padding: 50px 60px;
+            background: $white1;
+            position: absolute;
+            top: 50%;
+            left: 300px;
+            transform: translateY(-50%);
+            box-shadow: 0 2px 9px 6px rgba(170, 166, 166, 0.4784313725);
+            width: 700px;
+            border-radius: 4px;
+
+            @media screen and (max-width: 1100px) {
+                width: 80%;
+                left: 50%;
+                top: 7%;
+                transform: translateX(-50%);
+            }
+
+            @media screen and (max-width: 435px) {
+                padding: 40px 25px;
+                text-align: center;
+            }
+
+            .div-up {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @media screen and (max-width: 435px) {
+                    align-items: center;
+                }
+                h1 {
+                    font-size: 2rem;
+                }
+
+                .little-text {
+                    cursor: pointer;
+                    font-weight: bold;
+
+                    i {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .div-down {
+                margin-top: 40px;
+                display: flex;
+                gap: 30px;
+
+                @media screen and (max-width: 790px) {
+                    flex-direction: column;
+                }
+
+                .each-div-down {
+                    cursor: pointer;
+                    padding: 20px 0;
+                    border: 1px solid $grey1;
+                    border-radius: 6px;
+                    display: grid;
+                    grid-template-columns: 30% 50% 10%;
+                    align-items: center;
+                    justify-items: center;
+                    justify-content: space-evenly;
+
+                    @media screen and (max-width: 435px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:hover #angle {
+                        transform: translateX(5px);
+                    }
+
+                    &:hover {
+                        background: $hover-white;
+                    }
+
+                    #angle {
+                        font-size: 1.1rem;
+                        transition: 0.7s ease;
+                    }
+
+                    i {
+                        font-size: 3rem;
+                        color: $blue-dark;
+
+                        @media screen and (max-width: 855px) {
+                            font-size: 2rem;
+                        }
+
+                        @media screen and (max-width: 435px) {
+                            display: none;
+                        }
+                    }
+
+                    .inner-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        p {
+                            color: $grey2;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

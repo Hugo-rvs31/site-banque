@@ -1,0 +1,132 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1810px;
+    height: 64px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px $grey1;
+    letter-spacing: 1px;
+
+    @media screen and (max-width: 855px) {
+        height: 45px;
+    }
+
+    @media screen and (max-width: 590px) {
+        height: 37px;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 19% 20% 6% 13% 20% 22%;
+        height: 100%;
+
+        @media screen and (max-width: 855px) {
+            grid-template-columns: 70% 7.5% 7.5% 7.5% 7.5%;
+        }
+
+        @media screen and (max-width: 650px) {
+            grid-template-columns: 70% 10% 10% 10%;
+        }
+
+        @media screen and (max-width: 490px) {
+            grid-template-columns: 55% 15% 15% 15%;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid $grey1;
+            font-size: 0.77rem;
+            background: $white1;
+            border-bottom: 1px solid $grey1;
+
+            h1 {
+                @media screen and (max-width: 960px) {
+                    font-size: 1rem;
+                }
+            }
+            img {
+                height: 50px;
+                width: 50px;
+            }
+
+            i {
+                font-size: 1.25rem;
+            }
+        }
+        
+        li:nth-child(1) {
+
+            justify-content: space-around;
+
+            @media screen and (max-width: 855px) {
+                justify-content: flex-start;
+                padding-left: 10px;
+            }
+            h1 {
+                color: $blue-dark;
+
+                @media screen and (max-width: 1065px) {
+                        display: none;
+                }
+            }
+        }
+
+        li:nth-child(2) {
+            justify-content: space-around;
+
+            @media screen and (max-width: 855px) {
+                display: none;
+            }
+        }
+
+        li:nth-child(4) {
+            justify-content: space-evenly;
+            border-right: none;
+
+            h1 {
+                @media screen and (max-width: 855px) {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                background: $hover-white;
+            }
+        }
+
+        li:nth-child(5) {
+            background: $blue-light;
+            color: $white1;
+            border-bottom: none;
+
+            @media screen and (max-width: 855px) {
+                color: transparent;
+            }
+
+            @media screen and (max-width: 650px) {
+                display: none;
+            }
+            &:hover {
+                background: $hover-blue-light;
+            }
+        }
+
+        li:nth-child(6) {
+            background: $blue-dark;
+            color: $white1;
+            gap: 14px;
+            border-bottom: none;
+
+            h1 {
+                @media screen and (max-width: 855px) {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                background: $hover-blue-dark;
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.section-9 {
+    margin-top: 200px;
+    background: url(/assets/img/frankfurt-4945405_1920.jpg) center/cover fixed;
+    height: 570px;
+
+    @media screen and (max-width: 810px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 465px) {
+        height: 700px;
+    }
+
+    @media screen and (max-width: 334px) {
+        height: 750px;
+    }
+
+    h1 {
+        color: $white1;
+        font-size: 2.2rem;
+        padding-left: 45px;
+        padding-top: 60px;
+
+        @media screen and (max-width: 810px) {
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 465px) {
+            text-align: center;
+        }
+    }
+
+    .little-card {
+        background: rgb(255 255 255 / 83%);
+        margin-left: 45px;
+        margin-top: 30px;
+        border-radius: 5px;
+        padding: 50px 50px;
+        width: 55%;
+
+        @media screen and (max-width: 810px) {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        @media screen and (max-width: 577px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 465px) {
+            padding: 50px 15px;
+        }
+
+        @media screen and (max-width: 465px) {
+            height: 500px;
+        }
+
+        .inner-div {
+            .first-row {
+                display: flex;
+                border-bottom: $grey1 1px solid;
+                justify-content: space-between;
+
+                @media screen and (max-width: 465px) {
+                    flex-direction: column;
+                    border-bottom: none;
+                    align-items: center;
+                }
+
+                p {
+                    font-weight: bold;
+                    padding: 15px 24px;
+                
+                cursor: pointer;
+                font-size: 1.1;
+                }
+
+                p:first-child {
+                    color: $blue-dark-button;
+                    border-bottom: 2.5px solid $blue-dark-button;
+
+                    @media screen and (max-width: 465px) {
+                        border-bottom: none;
+                    }
+                }
+
+                p:nth-child(2) {
+
+                    &:hover {
+                        color: $blue-dark-button;
+                        border-bottom: 2.5px solid$blue-dark-button;
+
+                        @media screen and (max-width: 465px) {
+                            border-bottom: none;
+                        }
+                    }
+                }
+
+                p:nth-child(3) {
+
+                    &:hover {
+                        color: $blue-dark-button;
+                        border-bottom: 2.5px solid$blue-dark-button;
+
+                        @media screen and (max-width: 465px) {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+
+            .div-input {
+                display: flex;
+                flex-direction: column;
+                margin: 45px 0;
+                gap: 45px;
+
+                input {
+                    border-bottom: 2px solid $grey1;
+                    height: 40px;
+                    font-size: 1rem;
+                    color: $grey2;
+                }
+
+                input:focus {
+                    border: 1px solid $grey1;
+                    background: rgba(255, 255, 255, 0.575);
+                }
+            }
+
+            .submit {
+                display: flex;
+                justify-content: space-between;
+
+                @media screen and (max-width: 334px) {
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                }
+
+                .left {
+                    input[type=checkbox] {
+                        margin-right: 6px;
+                        cursor: pointer;
+                    }
+
+                    label {
+                        color: rgb(113 110 110);
+                        cursor: pointer;
+                    }
+                }
+
+                .right {
+                   button {
+                    background: $blue-dark-button;
+                    color: $white1;
+
+                    &:hover {
+                        background: rgb(1, 1, 90);
+                    }
+                   } 
+                }
+            }
+        }
+    }
+}

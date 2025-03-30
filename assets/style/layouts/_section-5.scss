@@ -1,0 +1,71 @@
+.section-5 {
+    width: 95%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 60% 25%;
+    background: $purple1;
+    color: $white1;
+    height: 270px;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    border-radius: 5px;
+
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 364px) {
+        height: 330px;
+    }
+
+    .div-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width: 650px) {
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: lighter;
+        }
+
+        button {
+            width: 70%;
+        }
+    }
+
+    .div-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 650px) {
+            display: none;
+        }
+        
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7000px;
+                height: 200px;
+                width: 200px;
+            img {
+                border-radius: 7000px;
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}
